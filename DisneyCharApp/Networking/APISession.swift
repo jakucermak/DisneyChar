@@ -7,7 +7,6 @@
 
 import Foundation
 import Combine
-import Alamofire
 
 struct APISession: APIService {
 
@@ -31,8 +30,7 @@ struct APISession: APIService {
                         }
                     }
                     return Fail(error: APIError.unknown).eraseToAnyPublisher()
-                }
-                .eraseToAnyPublisher()
+                }.eraseToAnyPublisher()
     }
     
 }

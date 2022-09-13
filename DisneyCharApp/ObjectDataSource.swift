@@ -9,7 +9,7 @@ import UIKit
 
 class ObjectDataSource: NSObject, UITableViewDataSource {
     
-    var objects = ["Hello","From","Swift"]
+    var objects = [Character]()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return objects.count
@@ -18,7 +18,7 @@ class ObjectDataSource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterViewCell", for: indexPath) as! CharacterViewCell
         let object = objects[indexPath.row]
-        cell.Label.text = object
+        cell.Label.text = object.name
         return cell
     }
 }
