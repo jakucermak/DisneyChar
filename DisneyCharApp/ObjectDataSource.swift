@@ -21,6 +21,4 @@ class ObjectDataSource: NSObject, UITableViewDataSource {
         cell.Label.text = object
         return cell
     }
-    
-
 }

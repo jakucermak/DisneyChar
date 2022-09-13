@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3B0C2CDE28CFA84300D207B1"
-               BuildableName = "DisneyCharApp.app"
-               BlueprintName = "DisneyCharApp"
-               ReferencedContainer = "container:DisneyCharApp.xcodeproj">
+               BlueprintIdentifier = "E43E690698F262B27F39D0F183414A1E"
+               BuildableName = "Pods_DisneyCharAppTests.framework"
+               BlueprintName = "Pods-DisneyCharAppTests"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,16 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3B0C2CDE28CFA84300D207B1"
-            BuildableName = "DisneyCharApp.app"
-            BlueprintName = "DisneyCharApp"
-            ReferencedContainer = "container:DisneyCharApp.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

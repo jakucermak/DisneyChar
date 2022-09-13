@@ -1,0 +1,6 @@
+framework module Pods_DisneyCharApp_DisneyCharAppUITests {
+  umbrella header "Pods-DisneyCharApp-DisneyCharAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
