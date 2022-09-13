@@ -15,6 +15,9 @@
 		3B0C2CFA28CFA84800D207B1 /* DisneyCharAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0C2CF928CFA84800D207B1 /* DisneyCharAppTests.swift */; };
 		3B0C2D0428CFA84800D207B1 /* DisneyCharAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0C2D0328CFA84800D207B1 /* DisneyCharAppUITests.swift */; };
 		3B0C2D0628CFA84800D207B1 /* DisneyCharAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0C2D0528CFA84800D207B1 /* DisneyCharAppUITestsLaunchTests.swift */; };
+		3B9E90DE28CFD57B009BC5A5 /* ObjectDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E90DD28CFD57B009BC5A5 /* ObjectDataSource.swift */; };
+		3B9E90E228CFD9F5009BC5A5 /* CharacterViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E90E028CFD9F5009BC5A5 /* CharacterViewCell.swift */; };
+		3B9E90E328CFD9F5009BC5A5 /* CharacterViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9E90E128CFD9F5009BC5A5 /* CharacterViewCell.xib */; };
 		3BC9583328CFB01500FEAEA0 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC9583228CFB01500FEAEA0 /* Storyboarded.swift */; };
 		3BC9583528CFB02700FEAEA0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC9583428CFB02700FEAEA0 /* Coordinator.swift */; };
 		3BC9583828CFB0E500FEAEA0 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC9583728CFB0E500FEAEA0 /* MainCoordinator.swift */; };
@@ -51,6 +54,9 @@
 		3B0C2CFF28CFA84800D207B1 /* DisneyCharAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisneyCharAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B0C2D0328CFA84800D207B1 /* DisneyCharAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyCharAppUITests.swift; sourceTree = "<group>"; };
 		3B0C2D0528CFA84800D207B1 /* DisneyCharAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneyCharAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3B9E90DD28CFD57B009BC5A5 /* ObjectDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDataSource.swift; sourceTree = "<group>"; };
+		3B9E90E028CFD9F5009BC5A5 /* CharacterViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewCell.swift; sourceTree = "<group>"; };
+		3B9E90E128CFD9F5009BC5A5 /* CharacterViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterViewCell.xib; sourceTree = "<group>"; };
 		3BC9583228CFB01500FEAEA0 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		3BC9583428CFB02700FEAEA0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		3BC9583728CFB0E500FEAEA0 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
@@ -109,10 +115,10 @@
 				3BC9583128CFAFFB00FEAEA0 /* Protocols */,
 				3B0C2CE228CFA84300D207B1 /* AppDelegate.swift */,
 				3B0C2D1928CFADDC00D207B1 /* ViewControllers */,
-				3B0C2CE828CFA84300D207B1 /* Main.storyboard */,
+				3B9E90DF28CFD9CD009BC5A5 /* Views */,
 				3B0C2CEB28CFA84700D207B1 /* Assets.xcassets */,
-				3B0C2CED28CFA84700D207B1 /* LaunchScreen.storyboard */,
 				3B0C2CF028CFA84700D207B1 /* Info.plist */,
+				3B9E90DD28CFD57B009BC5A5 /* ObjectDataSource.swift */,
 			);
 			path = DisneyCharApp;
 			sourceTree = "<group>";
@@ -141,6 +147,17 @@
 				3BC9583928CFB46A00FEAEA0 /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3B9E90DF28CFD9CD009BC5A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B0C2CE828CFA84300D207B1 /* Main.storyboard */,
+				3B0C2CED28CFA84700D207B1 /* LaunchScreen.storyboard */,
+				3B9E90E028CFD9F5009BC5A5 /* CharacterViewCell.swift */,
+				3B9E90E128CFD9F5009BC5A5 /* CharacterViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		3BC9583128CFAFFB00FEAEA0 /* Protocols */ = {
@@ -266,6 +283,7 @@
 			files = (
 				3B0C2CEF28CFA84700D207B1 /* LaunchScreen.storyboard in Resources */,
 				3B0C2CEC28CFA84700D207B1 /* Assets.xcassets in Resources */,
+				3B9E90E328CFD9F5009BC5A5 /* CharacterViewCell.xib in Resources */,
 				3B0C2CEA28CFA84300D207B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +310,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B0C2CE728CFA84300D207B1 /* ViewController.swift in Sources */,
+				3B9E90DE28CFD57B009BC5A5 /* ObjectDataSource.swift in Sources */,
+				3B9E90E228CFD9F5009BC5A5 /* CharacterViewCell.swift in Sources */,
 				3BC9583828CFB0E500FEAEA0 /* MainCoordinator.swift in Sources */,
 				3B0C2CE328CFA84300D207B1 /* AppDelegate.swift in Sources */,
 				3BC9583528CFB02700FEAEA0 /* Coordinator.swift in Sources */,

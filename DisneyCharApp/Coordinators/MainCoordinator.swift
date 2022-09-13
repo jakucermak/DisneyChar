@@ -24,10 +24,11 @@ class MainCoordinator: Coordinator {
     }
     
     
-    func getDetailViewController(sender: Any?){
+    func getDetailViewController(label: String){
         let vc = DetailViewController.instantiate()
         vc.coordinator = self
-        navigationController.showDetailViewController(vc, sender: sender)
+        vc.setLabel(str: label)
+        navigationController.showDetailViewController(vc, sender: nil)
     }
 
 }
