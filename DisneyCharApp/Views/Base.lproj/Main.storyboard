@@ -57,6 +57,9 @@
                             <constraint firstAttribute="bottom" secondItem="NUd-to-djg" secondAttribute="bottom" id="iD8-o3-FQe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="characterTableView" destination="uFn-pm-tLM" id="g21-uj-LE0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,6 +121,9 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="detailLabelOutlet" destination="cvV-L7-bbL" id="IXc-Px-bI6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJZ-3I-Kmu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
