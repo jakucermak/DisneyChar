@@ -12,7 +12,6 @@ class MainCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = [Coordinator]()
     
     var navigationController: UINavigationController
-    
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
@@ -24,10 +23,10 @@ class MainCoordinator: Coordinator {
     }
     
     
-    func getDetailViewController(label: String){
+    func getDetailViewController(character: Character){
         let vc = DetailViewController.instantiate()
         vc.coordinator = self
-        vc.setLabel(str: label)
+        vc.viewModel = DetailViewModel(character: character)
         navigationController.showDetailViewController(vc, sender: nil)
     }
 

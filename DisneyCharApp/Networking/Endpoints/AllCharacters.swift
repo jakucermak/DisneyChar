@@ -18,9 +18,9 @@ enum Endpoints {
     public var path: String {
         switch self {
         case .allCharactersEndpoint:
-            return "/characters?page="
+            return "characters?page="
         case .getSingleCharacter:
-            return "/characters/"
+            return "characters/"
         }
     }
     
@@ -36,8 +36,7 @@ enum Endpoints {
 
 extension Endpoints: RequestBuilder {
     var urlRequest: URLRequest {
-        guard let url: URL = URL(string: baseURL + path)
-        else { preconditionFailure("Invalid URL format") }
+        guard let url: URL = URL(string: baseURL + path + parameters) else { preconditionFailure("Invalid URL format") }
         let request: URLRequest = URLRequest(url: url)
         return request
     }

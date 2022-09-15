@@ -14,7 +14,7 @@ class CharacterViewCell: UITableViewCell {
         return UINib(nibName: String(describing: self), bundle: nil)
     }
 
-    @IBOutlet weak var Label: UILabel!
+    @IBOutlet weak var name: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,5 +26,4 @@ class CharacterViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }
